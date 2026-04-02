@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import { useState } from "react";
 
 // ─── CONFIG ───────────────────────────────────────────────────────────────────
@@ -211,8 +213,8 @@ export default function GTMOrgDesigner() {
     pageBg: "#f8f9fb", cardBg: "#ffffff", cardBorder: "#e5e7eb",
     textPrimary: "#111827", textSecondary: "#374151",
     textMuted: "#6b7280", textFaint: "#9ca3af",
-    accent: "#4f46e5", accentLight: "#eef2ff",
-    accentBorder: "#c7d2fe", accentText: "#4338ca",
+    accent: "#1a6b3c", accentLight: "#f0fdf4",
+    accentBorder: "#bbf7d0", accentText: "#166534",
     success: "#16a34a", successLight: "#f0fdf4", successBorder: "#bbf7d0",
     warning: "#d97706", warningLight: "#fffbeb", warningBorder: "#fde68a",
     danger: "#dc2626", dangerLight: "#fef2f2", dangerBorder: "#fecaca",
@@ -272,12 +274,12 @@ export default function GTMOrgDesigner() {
 
   return (
     <div style={{ minHeight: "100vh", background: T.pageBg, fontFamily: T.sans, color: T.textPrimary }}>
-      <style>{`
+      <style>{\`
         @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
         * { box-sizing: border-box; }
         @keyframes fadeIn  { from { opacity: 0; transform: translateY(5px);  } to { opacity: 1; transform: translateY(0); } }
         @keyframes slideIn { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: translateX(0); } }
-      `}</style>
+      \`}</style>
 
       <div style={{ background: T.headerBg, padding: "20px 40px", borderBottom: `1px solid ${T.headerBorder}` }}>
         <div style={{ maxWidth: 1060, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
